@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button
+        {
+            width: 28.8vw; height: 8vh; background-color: blueviolet;
+            outline: none;
+            border: 0.1vh solid blueviolet;
+            color: white;
+            font-size: 1.4vw;
+            margin-left: 35vw;
+        }
+        button:hover
+        {
+            background-color: blue;
+        }
+  
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;margin-top: 4vh; margin-left: -1.5vw; color: red; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">Notes App</h1>
+    <textarea name="" style="margin-left: 35vw; outline: none; border-radius: 0.4vw;" id="data" cols="50" rows="25" placeholder="Enter Your Notes here..."></textarea>
+    <br>
+    <button id="buttom">Save</button>
+    <div id="root"></div>
+    <script src="../build/bundle.js"></script>
+</body>
+</html>
+
+<!-- npm init -y
+    in package.json write     "build": "webpack",
+    make a src folder inside that make 
+    index.js file
+    and some other file for doing opration like sum mul etc import all file in index.js file than
+  npm install webpack webpack-cli
+  run command npm run build
+make a public folder and create index.hmtl file
+  in script src give location of dsk folder main file
+  create webpack.config,js
+  const path = require("path")
+
+module.exports = {
+    entry: "./src/index.js",
+    output: {
+        path: path.join(__dirname,"build"),
+        filename: "bundle.js"
+    },
+   
+}
+agin run command npm run build
+than for live chaging put in package.json
+"build:watch": "webpack --watch" 
+than agin run npm run build
+for css install loader
+run npm install --save-dev style-loader css-loader
+and in webpack.config.js
+const path = require("path")
+
+const path = require("path")
+
+module.exports = {
+    entry: "./src/index.js",
+    output: {
+        path: path.join(__dirname,"build"),
+        filename: "bundle.js"
+    },
+    module:{
+        rules: [
+            {
+                test:/\.css$/,
+                use:['style-loader','css-loader']
+            }
+        ]
+    }
+}
+than create index.css file in src
+// run npm install react react-dom
+
+ -->
